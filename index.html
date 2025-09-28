@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PGIMS Research & Opportunity Hub | Official Platform</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0a0a0a; /* A very dark gray for a premium feel */
+            color: #f5f5f5;
+        }
+        .gradient-text {
+            background: linear-gradient(to right, #ea580c, #2563eb); /* Official-looking colors */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .btn {
+            @apply px-6 py-3 rounded-lg font-semibold text-lg transition-transform duration-300 ease-in-out;
+        }
+        .btn-primary {
+            @apply bg-blue-700 text-white hover:bg-blue-800 hover:scale-105;
+        }
+        .btn-secondary {
+            @apply bg-gray-700 text-white hover:bg-gray-600 hover:scale-105;
+        }
+        .card {
+            @apply bg-gray-800/50 backdrop-blur-sm p-8 rounded-2xl border border-gray-700;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-gray-900/70 backdrop-blur-lg border-b border-gray-800">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold gradient-text">PGIMS Opportunity Hub</h1>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#how-it-works" class="text-gray-300 hover:text-white transition">How It Works</a>
+                <a href="#vision" class="text-gray-300 hover:text-white transition">Creator's Vision</a>
+                <a href="#faq" class="text-gray-300 hover:text-white transition">FAQ</a>
+            </nav>
+            <a href="#join" class="btn btn-primary hidden md:block">Get Started</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main class="pt-24">
+        <section id="hero" class="text-center min-h-screen flex items-center justify-center -mt-24">
+            <div class="container mx-auto px-6">
+                <p class="font-semibold text-blue-400 mb-2">An Official Initiative of PGIMS, Rohtak</p>
+                <h2 class="text-5xl md:text-7xl font-extrabold mb-4">Innovate. Collaborate. <span class="gradient-text">Excel.</span></h2>
+                <p class="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto mb-8">
+                    The official private mediator connecting PGIMS students with faculty for research, clinical, and volunteer opportunities. Find your next project or protégé, securely and automatically.
+                </p>
+                <div id="join" class="flex flex-col md:flex-row gap-4 justify-center">
+                    <!-- IMPORTANT: Replace these '#' with your actual Google Form links -->
+                    <a href="#" target="_blank" class="btn btn-primary">Student Registration</a>
+                    <a href="#" target="_blank" class="btn btn-secondary">Faculty & Mentor Registration</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section id="how-it-works" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h3 class="text-4xl font-bold">A Confidential & Automated Process</h3>
+                    <p class="text-lg text-gray-400 mt-2">Connecting talent with opportunity in 3 simple steps.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Step 1 -->
+                    <div class="card text-center">
+                        <div class="flex justify-center mb-4">
+                            <svg class="w-16 h-16 gradient-text" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                        </div>
+                        <h4 class="text-2xl font-semibold mb-2">1. Submit Your Profile</h4>
+                        <p class="text-gray-400">Fill out a confidential form detailing your skills, interests, or project needs. Your data is never shown publicly.</p>
+                    </div>
+                    <!-- Step 2 -->
+                    <div class="card text-center">
+                         <div class="flex justify-center mb-4">
+                            <svg class="w-16 h-16 gradient-text" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                        </div>
+                        <h4 class="text-2xl font-semibold mb-2">2. Automated Matching</h4>
+                        <p class="text-gray-400">Our secure script instantly compares your submission against our private database to find potential skill-based matches.</p>
+                    </div>
+                    <!-- Step 3 -->
+                    <div class="card text-center">
+                         <div class="flex justify-center mb-4">
+                            <svg class="w-16 h-16 gradient-text" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                        </div>
+                        <h4 class="text-2xl font-semibold mb-2">3. Connect via Email</h4>
+                        <p class="text-gray-400">If a strong match is found, we introduce both parties via a private email. You take it from there!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- About the Visionary Section -->
+        <section id="vision" class="py-20 bg-gray-900">
+            <div class="container mx-auto px-6 max-w-5xl">
+                <div class="text-center mb-12">
+                    <h3 class="text-4xl font-bold">About the Creator & Visionary</h3>
+                </div>
+                <div class="card md:grid md:grid-cols-3 md:gap-8 items-center">
+                    <div class="md:col-span-1 text-center mb-6 md:mb-0">
+                        <!-- Placeholder for an image -->
+                        <div class="w-48 h-48 rounded-full bg-gray-700 mx-auto flex items-center justify-center">
+                           <span class="text-gray-400">Photo</span>
+                        </div>
+                        <h4 class="text-2xl font-bold mt-4">Dr. Avi Mittal</h4>
+                        <p class="text-blue-400">Final Year MBBS (Batch of 2021), PGIMS Rohtak</p>
+                    </div>
+                    <div class="md:col-span-2">
+                        <p class="text-lg text-gray-300 mb-4">
+                            This platform was envisioned and developed by **Dr. Avi Mittal**, a final-year medical student at PGIMS, Rohtak. With a passion for the intersection of medicine, technology, and education, he recognized the need for a streamlined system to connect students with valuable research and mentorship opportunities within the institution.
+                        </p>
+                        <p class="text-gray-400">
+                            His vision extends beyond simple matchmaking; it's about building a sustainable ecosystem that empowers peers, fosters collaboration, and utilizes technology to enhance both learning and healthcare delivery. By creating this secure, automated bridge, Dr. Mittal aims to ensure that every student has the chance to find meaningful projects and every faculty member can discover the talent they need to drive innovation forward at PGIMS.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits Section -->
+        <section id="benefits" class="py-20">
+            <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+                <div class="card">
+                    <h3 class="text-3xl font-bold mb-4">For Students</h3>
+                    <ul class="space-y-3 text-lg text-gray-300">
+                        <li class="flex items-start"><span class="text-green-400 mr-3 mt-1">✓</span> Gain real-world clinical and research experience.</li>
+                        <li class="flex items-start"><span class="text-green-400 mr-3 mt-1">✓</span> Access exclusive opportunities within PGIMS.</li>
+                        <li class="flex items-start"><span class="text-green-400 mr-3 mt-1">✓</span> Build your network with faculty and mentors.</li>
+                        <li class="flex items-start"><span class="text-green-400 mr-3 mt-1">✓</span> Your profile remains 100% confidential.</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3 class="text-3xl font-bold mb-4">For Faculty & Mentors</h3>
+                    <ul class="space-y-3 text-lg text-gray-300">
+                        <li class="flex items-start"><span class="text-blue-400 mr-3 mt-1">✓</span> Find motivated, skilled students for your projects.</li>
+                        <li class="flex items-start"><span class="text-blue-400 mr-3 mt-1">✓</span> Save time searching for suitable candidates.</li>
+                        <li class="flex items-start"><span class="text-blue-400 mr-3 mt-1">✓</span> Discover talent with specific skills you need.</li>
+                        <li class="flex items-start"><span class="text-blue-400 mr-3 mt-1">✓</span> Only receive emails for relevant candidates.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <!-- FAQ Section -->
+        <section id="faq" class="py-20 bg-gray-900">
+            <div class="container mx-auto px-6 max-w-4xl">
+                 <div class="text-center mb-12">
+                    <h3 class="text-4xl font-bold">Frequently Asked Questions</h3>
+                </div>
+                <div class="space-y-4">
+                    <details class="card p-6 cursor-pointer">
+                        <summary class="font-semibold text-lg">Is my data secure?</summary>
+                        <p class="text-gray-400 mt-4">
+                            Yes. This is an official PGIMS platform. Your data is stored in a private database, accessible only to the system administrator for maintenance. The script connects people via email introductions. No lists of students or faculty are ever published on this website.
+                        </p>
+                    </details>
+                     <details class="card p-6 cursor-pointer">
+                        <summary class="font-semibold text-lg">How does the matching work?</summary>
+                        <p class="text-gray-400 mt-4">
+                           Matching is based on skills and interests. When you submit your profile, you list your qualifications. Our script compares them to the "required skills" listed for projects. If there is an overlap, it triggers a confidential email introduction.
+                        </p>
+                    </details>
+                     <details class="card p-6 cursor-pointer">
+                        <summary class="font-semibold text-lg">Is this service free to use?</summary>
+                        <p class="text-gray-400 mt-4">
+                           Yes, this platform is 100% free for all students and faculty of Pt. B.D. Sharma PGIMS, Rohtak.
+                        </p>
+                    </details>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-800 py-8">
+        <div class="container mx-auto px-6 text-center text-gray-500">
+            <p>&copy; 2025 Pt. B.D. Sharma Postgraduate Institute of Medical Sciences, Rohtak. All rights reserved.</p>
+            <p class="mt-2">A platform to foster innovation and collaboration within the PGIMS community.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+
